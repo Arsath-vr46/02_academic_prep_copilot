@@ -75,7 +75,7 @@ def chat():
 
         # 4. Invoke gemini-2.5-flash
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.1-flash-lite",
             contents=contents,
             config=types.GenerateContentConfig(
                 system_instruction=full_system_instruction,
